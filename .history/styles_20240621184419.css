@@ -104,14 +104,13 @@ section {
     padding: 10px;
 }
 form {
-    max-width: 300px;
+    max-width: 00px;
     margin: 20px 0 0 0;
     padding: 10px;
     margin-bottom: 20px;
     border-color: #4CAF50;
     background-color: #ccc;
-    border-color: #0df537;
-    
+    border-color: #000000;
 }
 label {
     display: block;
@@ -125,7 +124,7 @@ textarea {
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 3px;
+    border-radius: 4px;
     font-size: 1em;
 }
 

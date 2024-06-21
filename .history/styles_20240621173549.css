@@ -91,31 +91,30 @@ section {
 #contact {
     background-color: #ffffff;
     padding: 40px 0;
+    display: flex;
+    justify-content: center; /* Center the form horizontally */
+    align-items: center; /* Center the form vertically */
+    flex-direction: column; /* Align items vertically */
 }
+
 .contact-container {
-    margin: 0 auto;
-    padding: 15px;
-    background-color: rgb(255, 255, 255); 
-    border-radius: 3px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    flex: 1; /* Use flex: 1 to push footer to the bottom */
-    margin-top: 30px;
-    margin-bottom: 60px;
-    padding: 10px;
+    background-color: #f9f9f9; /* Light grey background for the form box */
+    border: 2px solid #4CAF50; /* Border color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    width: 80%; /* Width of the container */
+    max-width: 500px; /* Maximum width for larger screens */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
 }
+
 form {
-    max-width: 300px;
-    margin: 20px 0 0 0;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-color: #4CAF50;
-    background-color: #ccc;
-    border-color: #0df537;
-    
+    width: 100%;
 }
+
 label {
     display: block;
     margin-bottom: 5px;
+    color: #333; /* Label text color */
 }
 
 input[type="text"],
@@ -125,7 +124,7 @@ textarea {
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 3px;
+    border-radius: 4px;
     font-size: 1em;
 }
 
@@ -135,7 +134,7 @@ button[type="submit"] {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    
+    border-radius: 4px; /* Rounded corners for the button */
 }
 
 button[type="submit"]:hover {

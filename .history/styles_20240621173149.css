@@ -88,31 +88,13 @@ section {
 }
 
 /* Contact Form Styles */
-#contact {
-    background-color: #ffffff;
-    padding: 40px 0;
-}
-.contact-container {
-    margin: 0 auto;
-    padding: 15px;
-    background-color: rgb(255, 255, 255); 
-    border-radius: 3px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    flex: 1; /* Use flex: 1 to push footer to the bottom */
-    margin-top: 30px;
-    margin-bottom: 60px;
-    padding: 10px;
-}
+
+
 form {
-    max-width: 300px;
-    margin: 20px 0 0 0;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-color: #4CAF50;
-    background-color: #ccc;
-    border-color: #0df537;
-    
+    max-width: 600px;
+    margin: 0 auto;
 }
+
 label {
     display: block;
     margin-bottom: 5px;
@@ -125,7 +107,7 @@ textarea {
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 3px;
+    border-radius: 4px;
     font-size: 1em;
 }
 

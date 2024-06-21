@@ -107,11 +107,12 @@ form {
     max-width: 300px;
     margin: 20px 0 0 0;
     padding: 10px;
+    margin-top: 40 px;
     margin-bottom: 20px;
+    margin: 0 auto;
     border-color: #4CAF50;
     background-color: #ccc;
-    border-color: #0df537;
-    
+    border-color: #000000;
 }
 label {
     display: block;
@@ -125,7 +126,7 @@ textarea {
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 3px;
+    border-radius: 4px;
     font-size: 1em;
 }
 

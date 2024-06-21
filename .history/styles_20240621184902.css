@@ -111,7 +111,7 @@ form {
     border-color: #4CAF50;
     background-color: #ccc;
     border-color: #0df537;
-    
+    align-items: center;
 }
 label {
     display: block;
