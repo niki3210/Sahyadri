@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 4,
             "patches": [
                 {
                     "date": 1718969687576,
@@ -12,6 +12,18 @@
                 {
                     "date": 1718971041007,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,9 +61,9 @@\n                     <input type=\"email\" id=\"contact-email\" name=\"email\" required>\r\n                     <div class=\"error\" id=\"contact-email-error\"></div>\r\n \r\n                     <label for=\"message\">Message:</label>\r\n-                    <textarea id=\"message\" name=\"message\" rows=\"5\" required></textarea>\r\n+                    <textarea id=\"message\" name=\"message\" rows=\"\" required></textarea>\r\n                     <div class=\"error\" id=\"message-error\"></div>\r\n \r\n                     <button type=\"submit\">Submit</button>\r\n                 </form>\r\n"
+                },
+                {
+                    "date": 1718979067275,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,9 +61,9 @@\n                     <input type=\"email\" id=\"contact-email\" name=\"email\" required>\r\n                     <div class=\"error\" id=\"contact-email-error\"></div>\r\n \r\n                     <label for=\"message\">Message:</label>\r\n-                    <textarea id=\"message\" name=\"message\" rows=\"\" required></textarea>\r\n+                    <textarea id=\"message\" name=\"message\" rows=\"3\" required></textarea>\r\n                     <div class=\"error\" id=\"message-error\"></div>\r\n \r\n                     <button type=\"submit\">Submit</button>\r\n                 </form>\r\n@@ -77,9 +77,12 @@\n <footer>\r\n <div class=\"container\">\r\n     <p>&copy; 2024 Green Essence. All rights reserved.</p>\r\n </div>\r\n+<div>\r\n+    <a href=\"#\">Privacy Policy</a>\r\n+    <a href=\"#\">Terms of Service</a>\r\n+</div>\r\n \r\n-\r\n </body>\r\n </html>\r\n \r\n"
+                },
+                {
+                    "date": 1718979073483,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,7 +82,9 @@\n     <a href=\"#\">Privacy Policy</a>\r\n     <a href=\"#\">Terms of Service</a>\r\n </div>\r\n \r\n+\r\n+\r\n </body>\r\n </html>\r\n \r\n"
+                },
+                {
+                    "date": 1718979082437,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,8 +83,8 @@\n     <a href=\"#\">Terms of Service</a>\r\n </div>\r\n \r\n \r\n-\r\n+</footer>\r\n </body>\r\n </html>\r\n \r\n"
                 }
             ],
             "date": 1718969687575,

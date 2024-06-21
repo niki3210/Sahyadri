@@ -94,9 +94,10 @@ section {
 }
 .contact-container {
     margin: 0 auto;
+    align-items: center;
     padding: 15px;
     background-color: rgb(255, 255, 255); 
-    border-radius: 3px;
+    border-radius: 9px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     flex: 1; /* Use flex: 1 to push footer to the bottom */
     margin-top: 30px;
@@ -108,9 +109,9 @@ form {
     margin: 20px 0 0 0;
     padding: 10px;
     margin-bottom: 20px;
-    border-color: #4CAF50;
+    border-color: #682121;
     background-color: #ccc;
-    border-color: #0df537;
+   
     
 }
 label {
@@ -147,14 +148,13 @@ button[type="submit"]:hover {
 .register-container {
     max-width: 320px;
     margin: 0 auto;
-    padding: 15px;
     background-color: rgb(255, 255, 255); 
     border-radius: 3px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     flex: 1; /* Use flex: 1 to push footer to the bottom */
     margin-top: 30px;
     margin-bottom: 60px;
-    padding: 20px;
+    padding: 10px;
 }
 
 body {
@@ -165,8 +165,8 @@ body {
 }
 
 .login-form, .register-form {
-    padding: 15px;
-    margin-bottom: 30px;
+    padding: 10px;
+    margin-bottom: 20px; /* size of form from downside */
 }
 
 .login-form h2, .register-form h2 {
@@ -217,7 +217,7 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 5px 0;
     width: 100%;
    
 }
