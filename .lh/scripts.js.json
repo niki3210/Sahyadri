@@ -1,0 +1,18 @@
+{
+    "sourceFile": "scripts.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1718957599189,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1718957599189,
+            "name": "Commit-0",
+            "content": "document.addEventListener(\"DOMContentLoaded\", function() {\r\n    const loginForm = document.querySelector(\".login-form\");\r\n    const registerForm = document.querySelector(\".register-form form\");\r\n    const popup = document.getElementById(\"popup\");\r\n    const closePopup = document.getElementById(\"closePopup\");\r\n\r\n    if (loginForm) {\r\n        loginForm.addEventListener(\"submit\", function(event) {\r\n            let email = document.getElementById(\"email\").value;\r\n            let password = document.getElementById(\"password\").value;\r\n            let emailError = document.getElementById(\"email-error\");\r\n            let passwordError = document.getElementById(\"password-error\");\r\n            let isValid = true;\r\n\r\n            emailError.textContent = \"\";\r\n            passwordError.textContent = \"\";\r\n\r\n            if (!validateEmail(email)) {\r\n                emailError.textContent = \"Please enter a valid email address.\";\r\n                isValid = false;\r\n            }\r\n\r\n            if (password.length < 6) {\r\n                passwordError.textContent = \"Password must be at least 6 characters.\";\r\n                isValid = false;\r\n            }\r\n\r\n            if (!isValid) {\r\n                event.preventDefault();\r\n            }\r\n        });\r\n    }\r\n\r\n    if (registerForm) {\r\n        registerForm.addEventListener(\"submit\", function(event) {\r\n            let email = document.getElementById(\"new-email\").value;\r\n            let password = document.getElementById(\"new-password\").value;\r\n            let confirmPassword = document.getElementById(\"confirm-password\").value;\r\n            let emailError = document.getElementById(\"new-email-error\");\r\n            let passwordError = document.getElementById(\"new-password-error\");\r\n            let confirmPasswordError = document.getElementById(\"confirm-password-error\");\r\n            let isValid = true;\r\n\r\n            emailError.textContent = \"\";\r\n            passwordError.textContent = \"\";\r\n            confirmPasswordError.textContent = \"\";\r\n\r\n            if (!validateEmail(email)) {\r\n                emailError.textContent = \"Please enter a valid email address.\";\r\n                isValid = false;\r\n            }\r\n\r\n            if (password.length < 6) {\r\n                passwordError.textContent = \"Password must be at least 6 characters.\";\r\n                isValid = false;\r\n            }\r\n\r\n            if (password !== confirmPassword) {\r\n                confirmPasswordError.textContent = \"Passwords do not match.\";\r\n                isValid = false;\r\n            }\r\n\r\n            if (!isValid) {\r\n                event.preventDefault();\r\n            } else {\r\n                event.preventDefault(); // Prevent form submission to show pop-up\r\n                popup.style.display = \"block\";\r\n            }\r\n        });\r\n    }\r\n\r\n    closePopup.addEventListener(\"click\", function() {\r\n        popup.style.display = \"none\";\r\n    });\r\n\r\n    function validateEmail(email) {\r\n        const re = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;\r\n        return re.test(String(email).toLowerCase());\r\n    }\r\n});\r\n"
+        }
+    ]
+}

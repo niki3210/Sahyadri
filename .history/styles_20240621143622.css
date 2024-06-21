@@ -1,0 +1,207 @@
+/* Combined CSS for Home, Login, and Register Pages */
+
+/* Reset default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh; /* Ensure body extends to at least the full height of the viewport */
+    display: flex;
+    flex-direction: column; /* Use flexbox to make sure footer stays at the bottom */
+}
+
+/* Header styles */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Home Page Styles */
+#home {
+    background-image: url('backgroundhome.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+section {
+    padding: 60px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* About Section */
+#about {
+    background-color: #fffefe;
+    padding: 40px 0;
+}
+
+/* Contact Section Styles */
+#contact {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #000000;
+}
+
+#contact .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#contact .contact-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contact .contact-info p {
+    margin: 10px 0;
+}
+
+
+
+/* Login/Register Styles */
+.login-container,
+.register-container {
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: rgb(255, 255, 255); 
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Use flex: 1 to push footer to the bottom */
+    margin-top: 100px;
+    padding: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('backgroundhome.jpeg');
+    background-size: cover;
+    color: black;
+}
+
+.login-form, .register-form {
+    padding: 10px;
+    margin-bottom: 60px;
+}
+
+.login-form h2, .register-form h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+.error {
+    color: red;
+    font-size: 0.8em;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+footer a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+

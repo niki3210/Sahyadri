@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Green Essence</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="register">
+    <header>
+        <div class="container">
+            <h1>Green Essence</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div class="register-container">
+            <div class="register-form">
+                <h2>Create a New Account</h2>
+                <form action="/register" method="POST">
+                    <label for="new-email">Email:</label>
+                    <input type="email" id="new-email" name="new-email" required>
+                    <div class="error" id="new-email-error"></div>
+
+                    <label for="new-password">Password:</label>
+                    <input type="password" id="new-password" name="new-password" required>
+                    <div class="error" id="new-password-error"></div>
+
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    <div class="error" id="confirm-password-error"></div>
+
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Green Essence. All rights reserved.</p>
+        <div>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+    </footer>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" id="closePopup">&times;</span>
+            <p>Account created successfully!</p>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
